@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+main{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+main *{
+  background-color: blue;
+}
+@keyframes fadeOut {
+  0% { opacity: 1;}
+  100% { opacity: 0; display: none;}
+}
+
+.alert{
+  display: block;
+  margin: 0;
+  position: fixed;
+  right:0;
+  bottom: 0;
+}
+
+.alert *{
+  background-color:yellow;
+  animation: fadeOut 2s;
+  animation-fill-mode: forwards;
+}
